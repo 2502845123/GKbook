@@ -629,7 +629,7 @@
   "resolved" "https://registry.npmmirror.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz"
   "version" "8.5.0"
 
-"eslint-plugin-prettier@^4.0.0":
+"eslint-plugin-prettier@^4.0.0", "eslint-plugin-prettier@^4.2.1":
   "integrity" "sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ=="
   "resolved" "https://registry.npmmirror.com/eslint-plugin-prettier/-/eslint-plugin-prettier-4.2.1.tgz"
   "version" "4.2.1"

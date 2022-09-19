@@ -13,7 +13,7 @@ module.exports = {
     ecmaVersion: "latest",
   },
   rules: {
-    "'t' is assigned to itself": "off",
-    "'c' is assigned to itself": "off",
+    "no-redeclare": "off",
+    "no-self-assign": "off",
   },
 };

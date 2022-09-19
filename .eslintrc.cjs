@@ -12,4 +12,8 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
   },
+  rules: {
+    "'t' is assigned to itself": "off",
+    "'c' is assigned to itself": "off",
+  },
 };

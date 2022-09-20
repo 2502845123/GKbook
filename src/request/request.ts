@@ -48,19 +48,16 @@ class Request {
         config.interseptor?.afterResponse
       );
     }
-    return new Promise((resolve, reject) => {
-      this.instance.request(config).then(
-        (res) => {
-          this.instance.interceptors.response.use(
-            config.interseptor?.afterResponse
-          );
-          resolve(res.data);
-        },
-        (err) => {
-          reject(err);
-        }
-      );
-    });
+
+    return this.instance.request(config);
+  }
+
+  get<T>(config: RequestConfig): Promise<T> {
+    return this.request<T>({ ...config, method: "GET" });
+  }
+
+  post<T>(config: RequestConfig): Promise<T> {
+    return this.request<T>({ ...config, method: "POST" });
   }
 }
 

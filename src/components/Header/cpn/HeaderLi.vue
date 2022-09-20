@@ -1,4 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useRouter } from "vue-router";
+const Router = useRouter();
+
+function login() {
+  Router.push({ name: "user" });
+}
+</script>
 
 <template>
   <ul>
@@ -6,7 +13,7 @@
     <li>传书到手机</li>
     <li>墨水屏版</li>
     <li>手机版</li>
-    <li>登录</li>
+    <li @click="login">登录</li>
   </ul>
 </template>
 

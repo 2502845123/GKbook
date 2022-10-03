@@ -15,5 +15,6 @@ module.exports = {
   rules: {
     "no-redeclare": "off",
     "no-self-assign": "off",
+    "lintno-unused-vars": "off",
   },
 };

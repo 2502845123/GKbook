@@ -1,11 +1,15 @@
 import AppRequest from "./index";
 
+interface Data {
+  state: boolean;
+}
+
 export function register(
   accounNumber: string,
   password: string,
   name: string
-): any {
-  return AppRequest.post({
+): Promise<Data> {
+  return AppRequest.post<Data>({
     url: "/register",
     data: {
       accounNumber,
@@ -16,7 +20,7 @@ export function register(
 }
 
 export function login(accounNumber: string, password: string): any {
-  return AppRequest.post({
+  return AppRequest.post<Data>({
     url: "/login",
     data: {
       accounNumber,

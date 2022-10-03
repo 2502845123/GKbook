@@ -46,6 +46,7 @@ function userRegister() {
       psd.value = "";
       psd2.value = "";
       nickName.value = "";
+      console.log(res);
       Router.push({ name: "login" });
     });
   }
